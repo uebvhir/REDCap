@@ -26,21 +26,41 @@
 <li><span style="font-weight: normal;">It can be combined with a normal <span style="text-decoration: underline;"><em>if(x,y,z)</em> function</span>:</span></li>
 </ol>
 <pre>@CALCTEXT(if([your_field]='numeric-value', 'value if TRUE', 'Value if FALSE'))</pre>
+<ol>
+<li style="list-style-type: none;">
 <ul>
 <li><span style="font-weight: normal;">It can display the word "TRUE" if the result is true and "FALSE" if the result is false.</span></li>
 </ul>
+</li>
+</ol>
 <pre>@CALCTEXT(if([your_field] &gt; 8, 'TRUE', 'FALSE'))</pre>
 <pre>@CALCTEXT(if([smoke]='1', 'possible case', 'excluded'))<br>@CALCTEXT(if([background(1)]='1', 'possible case', 'excluded'))</pre>
 <ul>
+<li style="list-style-type: none;">
+<ul>
 <li><span style="font-weight: normal;">It is possible to insert 'static text', field variables, or Smart Variables as return values within the IF function:</span></li>
+</ul>
+</li>
 </ul>
 <pre>@CALCTEXT(if([your_field] &gt;= 18, [other_field], [current-instance])</pre>
 <ul>
-<li><span style="font-weight: normal;">But, it is <s>NOT</s> possible to<em> '[pipe]'</em> field variables or Smart Variables inside quotes for the return values.</span></li>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><span style="font-weight: normal;">But, it is </span><span style="text-decoration: underline; color: rgb(224, 62, 45);">NOT</span><span style="font-weight: normal;"> possible to<em> '[pipe]'</em> field variables or Smart Variables inside quotes for the return values.</span></li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li style="list-style-type: none;">
 <ul>
 <li><span style="font-weight: normal;">it can return a value as a number:</span></li>
 </ul>
+</li>
+</ol>
 <pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre>
 <p>Notes</p>
 <ul>
