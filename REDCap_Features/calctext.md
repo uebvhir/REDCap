@@ -13,7 +13,7 @@
 </ul>
 </li>
 </ul>
-<p><span style="font-weight: normal;"><img src=https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/field_type.png" width="684" height="79"></span></p>
+<p><span style="font-weight: normal;"><img src="https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/field_type.png" width="684" height="79"></span></p>
 <ul>
 <li><span style="font-weight: normal;">This annotated field will function <em>almost exactly</em> like a <span style="text-decoration: underline;">'Calculated Field' type</span>.</span></li>
 </ul>
