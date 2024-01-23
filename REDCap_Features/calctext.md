@@ -26,11 +26,11 @@
 <li><span style="font-weight: normal;">It can be combined with a normal <span style="text-decoration: underline;"><em>if(x,y,z)</em> function</span>:</span></li>
 </ol>
 <pre>@CALCTEXT(if([your_field]='numeric-value', 'value if TRUE', 'Value if FALSE'))</pre>
-<li>
 <ul>
-<li><span style="font-weight: normal;">It can display the word "TRUE" if the result is true and "FALSE" if the result is false.</span></li>
+  <li>
+    <li><span style="font-weight: normal;">It can display the word "TRUE" if the result is true and "FALSE" if the result is false.</span></li>
+  </li>
 </ul>
-</li>
 <pre>@CALCTEXT(if([your_field] &gt; 8, 'TRUE', 'FALSE'))</pre>
 <pre>@CALCTEXT(if([smoke]='1', 'possible case', 'excluded'))<br>@CALCTEXT(if([background(1)]='1', 'possible case', 'excluded'))</pre>
 <ul>
