@@ -11,4 +11,4 @@
 <ul>
 <li style="text-align: justify;">At least two DAGs must be checked for a userto enable the <span style="text-decoration: underline;">DAG Switcher</span>.</li>
 </ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23829&amp;doc_id_hash=93cfae1578e02af38669ec37fb1902e08fecf8d8" width="493" height="284"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://github.com/uebvhir/REDCap/blob/6ba836f5c94cd6cda6c992e848a8596e171a1ef9/REDCap_Features/Imatges/dag_switcher_2.png"></p>
