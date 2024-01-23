@@ -42,7 +42,7 @@
 <li><span style="font-weight: normal;">It can return a value as a number:</span></li>
 </li>
 </ol>
-<pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))<pre>
+<pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre>
 <p>Notes</p>
 <ul>
 <li>CALCTEXT() <span style="font-weight: normal;">values can be updated when running <em><span style="text-decoration: underline;">Data Quality rule H</span></em> (see <span style="text-decoration: underline;">Data Quality page</span> of a REDCap project as follows):</span></li>
