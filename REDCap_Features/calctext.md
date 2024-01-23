@@ -40,7 +40,9 @@
 <pre>@CALCTEXT(if([your_field] &gt;= 18, [other_field], [current-instance])</pre>
 <ol start="5">
 <li><span style="font-weight: normal;">It can return a value as a number:</span></li>
-<pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre>
+</li>
+</ol>
+<div style="background-color: #f0f0f0;"><pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre></div>
 <p>Notes</p>
 <ul>
 <li>CALCTEXT() <span style="font-weight: normal;">values can be updated when running <em><span style="text-decoration: underline;">Data Quality rule H</span></em> (see <span style="text-decoration: underline;">Data Quality page</span> of a REDCap project as follows):</span></li>
