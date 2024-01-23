@@ -1,8 +1,8 @@
 <h3>@<span style="text-decoration: underline;">ACTION @TAGs: CALCTEXT</span></h3>
 <p> </p>
 <h6>Do you know what are Action Tags?</h6>
-<p><em>'Action Tags are special terms that begin with the '@' sign that can be placed inside a field's Field Annotation' (see <a title="REDCap Help &amp; FAQ page" href="https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/action_tag.png" target="_blank" rel="noopener">REDCap Help &amp; FAQ page</a>.)</em></p>
-<p><em><img src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23850&amp;doc_id_hash=290e84645500cbc0e0bd8da27e422432e571ad9c" width="661" height="123"></em></p>
+<p><em>'Action Tags are special terms that begin with the '@' sign that can be placed inside a field's Field Annotation' (see <a title="REDCap Help &amp; FAQ page" href="https://redcap.vhir.org/redcap/index.php?action=help" target="_blank" rel="noopener">REDCap Help &amp; FAQ page</a>.)</em></p>
+<p><em><img src="https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/action_tag.png" width="661" height="123"></em></p>
 <p> </p>
 <h6>@CALCTEXT()</h6>
 <p>Function</p>
