@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="2 Guia ràpida: Entrada de dades | Manual RedCAP    Castellano    English" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+
+
+<meta name="description" content="2 Guia ràpida: Entrada de dades | Manual RedCAP    Castellano    English">
+
+<title>2 Guia ràpida: Entrada de dades | Manual RedCAP    Castellano    English</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li class="has-sub"><a href="introducció-al-redcap.html#introducció-al-redcap" id="toc-introducció-al-redcap"><span class="toc-section-number">1</span> <strong>Introducció al REDCap</strong></a>
+<ul>
+<li><a href="introducció-al-redcap.html#aplicació-redcap" id="toc-aplicació-redcap"><span class="toc-section-number">1.1</span> <strong>Aplicació REDCap</strong></a></li>
+<li><a href="introducció-al-redcap.html#accés-al-sistema" id="toc-accés-al-sistema"><span class="toc-section-number">1.2</span> <strong>Accés al sistema</strong></a></li>
+<li><a href="introducció-al-redcap.html#sollicitud-serveis" id="toc-sollicitud-serveis"><span class="toc-section-number">1.3</span> <strong>Sol·licitud serveis</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="guia-ràpida-entrada-de-dades.html#guia-ràpida-entrada-de-dades" id="toc-guia-ràpida-entrada-de-dades"><span class="toc-section-number">2</span> <strong>Guia ràpida: Entrada de dades</strong></a>
+<ul>
+<li><a href="guia-ràpida-entrada-de-dades.html#introducciómodificació-dun-registre" id="toc-introducciómodificació-dun-registre"><span class="toc-section-number">2.1</span> <strong>Introducció/modificació d’un registre</strong></a></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#visualització-de-les-dades-dashboard" id="toc-visualització-de-les-dades-dashboard"><span class="toc-section-number">2.2</span> <strong>Visualització de les dades: Dashboard</strong></a></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#tipus-de-dades" id="toc-tipus-de-dades"><span class="toc-section-number">2.3</span> <strong>Tipus de dades</strong></a></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#maneig-de-queries" id="toc-maneig-de-queries"><span class="toc-section-number">2.4</span> <strong>Maneig de “<em>Queries</em>”</strong></a></li>
+<li class="has-sub"><a href="guia-ràpida-entrada-de-dades.html#entrada-doble-de-dades" id="toc-entrada-doble-de-dades"><span class="toc-section-number">2.5</span> <strong>Entrada doble de dades</strong></a>
+<ul>
+<li><a href="guia-ràpida-entrada-de-dades.html#data-comparison-tool" id="toc-data-comparison-tool"><span class="toc-section-number">2.5.1</span> <em>Data Comparison Tool</em></a></li>
+</ul></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#registre-dactivitat-logregistros" id="toc-registre-dactivitat-logregistros"><span class="toc-section-number">2.6</span> <strong>Registre d’activitat: <em>Log/Registros</em></strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-dusuaris.html#gestió-dusuaris" id="toc-gestió-dusuaris"><span class="toc-section-number">3</span> <strong>Gestió d’usuaris</strong></a>
+<ul>
+<li><a href="gestió-dusuaris.html#alta-dun-usuari" id="toc-alta-dun-usuari"><span class="toc-section-number">3.1</span> <strong>Alta d’un usuari</strong></a></li>
+<li><a href="gestió-dusuaris.html#pregunta-de-recuperació-de-la-clau-daccés" id="toc-pregunta-de-recuperació-de-la-clau-daccés"><span class="toc-section-number">3.2</span> <strong>Pregunta de recuperació de la clau d’accés</strong></a></li>
+<li><a href="gestió-dusuaris.html#cas-dús" id="toc-cas-dús"><span class="toc-section-number">3.3</span> <strong>Cas d’ús</strong></a></li>
+<li><a href="gestió-dusuaris.html#alta-de-més-dun-usuari" id="toc-alta-de-més-dun-usuari"><span class="toc-section-number">3.4</span> <strong>Alta de més d’un usuari</strong></a></li>
+<li class="has-sub"><a href="gestió-dusuaris.html#rols-dusuari-i-grups-dags" id="toc-rols-dusuari-i-grups-dags"><span class="toc-section-number">3.5</span> <strong>Rols d’usuari i grups (DAGs)</strong></a>
+<ul>
+<li><a href="gestió-dusuaris.html#en3" id="toc-en3"><span class="toc-section-number">3.5.1</span> <strong>Tipus de rol</strong></a></li>
+<li><a href="gestió-dusuaris.html#creació-de-grups-dags" id="toc-creació-de-grups-dags"><span class="toc-section-number">3.5.2</span> <strong>Creació de grups (DAGs)</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#gestió-i-creació-de-base-de-dades" id="toc-gestió-i-creació-de-base-de-dades"><span class="toc-section-number">4</span> <strong>Gestió i Creació de base de dades</strong></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en15" id="toc-en15"><span class="toc-section-number">4.1</span> <strong>Introducció a la creació d’una base de dades</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en4" id="toc-en4"><span class="toc-section-number">4.2</span> <strong>Secció:</strong> <em>Ajustes principales de Proyecto</em></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#secció-habilitar-módulos-opcionales-y-personalizaciones" id="toc-secció-habilitar-módulos-opcionales-y-personalizaciones"><span class="toc-section-number">4.3</span> <strong>Secció:</strong> <em>Habilitar módulos opcionales y personalizaciones</em></a></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#secció-diseño-de-instrumentos-de-recolección-de-datos" id="toc-secció-diseño-de-instrumentos-de-recolección-de-datos"><span class="toc-section-number">4.4</span> <strong>Secció:</strong> <em>Diseño de instrumentos de recolección de datos</em></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#etiquetes-de-camp" id="toc-etiquetes-de-camp"><span class="toc-section-number">4.4.1</span> <strong>Etiquetes de camp</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#instruments-com-a-enquesta" id="toc-instruments-com-a-enquesta"><span class="toc-section-number">4.4.2</span> <strong>Instruments com a enquesta</strong></a></li>
+</ul></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#secció-habilitar-módulos-opcionales-y-personalizaciones-1" id="toc-secció-habilitar-módulos-opcionales-y-personalizaciones-1"><span class="toc-section-number">4.5</span> <strong>Secció</strong>: <em>Habilitar módulos opcionales y personalizaciones</em></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en1" id="toc-en1"><span class="toc-section-number">4.6</span> <strong>Secció</strong>: <em>Definir sus eventos y designar instrumentos para ellos</em></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en2" id="toc-en2"><span class="toc-section-number">4.7</span> <strong>Secció</strong>: <em>Prueba tu proyecto a fondo</em></a></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#mòduls-addicionals-recolección-de-datos" id="toc-mòduls-addicionals-recolección-de-datos"><span class="toc-section-number">4.8</span> <strong>Mòduls addicionals</strong>: <em>Recolección de datos</em></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#accés-a-lenquesta" id="toc-accés-a-lenquesta"><span class="toc-section-number">4.8.1</span> <strong>Accés a l’enquesta</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#pissarra-destat-de-registres" id="toc-pissarra-destat-de-registres"><span class="toc-section-number">4.8.2</span> <strong>Pissarra d’Estat de Registres</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#agregareditar-registres" id="toc-agregareditar-registres"><span class="toc-section-number">4.8.3</span> <strong>Agregar/Editar Registres</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#mòduls-addicionals-aplicaciones" id="toc-mòduls-addicionals-aplicaciones"><span class="toc-section-number">4.9</span> <strong>Mòduls addicionals</strong>: <em>Aplicaciones</em></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en9" id="toc-en9"><span class="toc-section-number">4.9.1</span> <strong><em>Exportación de datos, Reportes y Estadísticas</em></strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en8" id="toc-en8"><span class="toc-section-number">4.9.2</span> <strong><em>Herramienta para importar datos</em></strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#herramientas-para-comparar-datos" id="toc-herramientas-para-comparar-datos"><span class="toc-section-number">4.9.3</span> <strong><em>Herramientas para comparar datos</em></strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#logregistros" id="toc-logregistros"><span class="toc-section-number">4.9.4</span> **_Log/Registros**</a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#primera-base-de-dades" id="toc-primera-base-de-dades"><span class="toc-section-number">4.10</span> <strong>Primera base de dades</strong></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en7" id="toc-en7"><span class="toc-section-number">4.10.1</span> <strong>Principis generals</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#en16" id="toc-en16"><span class="toc-section-number">4.11</span> <strong>Validació de la gestió de dades: Validació PQ</strong></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#definició" id="toc-definició"><span class="toc-section-number">4.11.1</span> <strong>Definició</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#procés" id="toc-procés"><span class="toc-section-number">4.11.2</span> <strong>Procés</strong></a></li>
+</ul></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#tancament-base-de-dades" id="toc-tancament-base-de-dades"><span class="toc-section-number">4.12</span> <strong>Tancament base de dades</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="controls-de-qualitat.html#controls-de-qualitat" id="toc-controls-de-qualitat"><span class="toc-section-number">5</span> <strong>Controls de qualitat</strong></a>
+<ul>
+<li class="has-sub"><a href="controls-de-qualitat.html#gestió-de-queries" id="toc-gestió-de-queries"><span class="toc-section-number">5.1</span> <strong>Gestió de <em>Queries</em></strong></a>
+<ul>
+<li><a href="controls-de-qualitat.html#personal-gestor-del-sistema-de-queries" id="toc-personal-gestor-del-sistema-de-queries"><span class="toc-section-number">5.1.1</span> <strong>Personal gestor del sistema de <em>Queries</em></strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="controls-de-qualitat.html#en6" id="toc-en6"><span class="toc-section-number">5.2</span> <strong>Implementació de regles personalitzades</strong></a>
+<ul>
+<li><a href="controls-de-qualitat.html#comprovació-de-regles-personalitzades" id="toc-comprovació-de-regles-personalitzades"><span class="toc-section-number">5.2.1</span> <strong>Comprovació de regles personalitzades</strong></a></li>
+</ul></li>
+<li><a href="controls-de-qualitat.html#en5" id="toc-en5"><span class="toc-section-number">5.3</span> <strong>Execució de les regles de control de qualitat</strong></a></li>
+</ul></li>
+<li><a href="definicions-i-abreviatures.html#definicions-i-abreviatures" id="toc-definicions-i-abreviatures"><span class="toc-section-number">6</span> <strong>Definicions i abreviatures</strong></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="guia-ràpida-entrada-de-dades" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> <strong>Guia ràpida: Entrada de dades</strong></h1>
+<div id="introducciómodificació-dun-registre" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> <strong>Introducció/modificació d’un registre</strong></h2>
+<blockquote>
+<p><strong>Una advertència que cal fer a l’hora de treballar en REDCap és que la tecla <em>Intro</em> no s’ha de prémer, ja que implica desar el registre i sortir, no passar al següent. Per passar al següent cal fer un clic al botó esquerre del ratolí.</strong></p>
+</blockquote>
+<p>El REDCap assigna un únic nom o codi a tots els qüestionaris o mesures d’un individu. Normalment, és la persona que introdueix les dades qui assigna aquest codi, però el sistema ho pot genera automàticament com un número.</p>
+<p><img src="Imatges/imatge_35.png" /></p>
+<ul>
+<li>Per introduir un cas cal clicar en l’opció del menú “<em>Agregar/Editar registros</em>”(1).</li>
+<li>Apareixerà en l’àrea de visió un menú que permet elegir entre els pacients ja introduïts o posar el número o codi del nou pacient (2).</li>
+<li>En la part esquerra (3) apareixeran els qüestionaris a omplir del pacient amb un cercle a la dreta on, fent un clic damunt es
+mostra el qüestionari a omplir.</li>
+<li>El color d’aquests cercles indiquen l’estat del qüestionari (4).
+<ul>
+<li>En blanc indica que no hi ha cap dada guardada.</li>
+<li>En vermell indica que hi ha dades però està incomplet.</li>
+<li>En groc que les dades hi són, però no estan verificades.</li>
+<li>Finalment en verd indica que el registre està complet.</li>
+</ul></li>
+</ul>
+<p>Una altra manera d’introduir i/o visualitzar l’estat de les dades és utilitzar la pissarra d’estat o “<em>Dashboard</em>”. Si es clica el menú corresponent, s’obri la matriu de pacients/qüestionaris, amb l’estat d’introducció de cadascú segons el codi de color esmentat abans.</p>
+<ul>
+<li>Clicant damunt del cercle del qüestionari seleccionat del pacient elegit, aquest s’obri i es pot complimentar.</li>
+<li>Clicant damunt del codi del pacient torna a aparèixer la finestra de la figura anterior d’introducció de dades per pacients.</li>
+</ul>
+</div>
+<div id="visualització-de-les-dades-dashboard" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> <strong>Visualització de les dades: Dashboard</strong></h2>
+<p>La pissarra pot estar personalitzada per l’administrador de la base de dades perquè sigui més senzilla.</p>
+<ol style="list-style-type: decimal">
+<li>En el cas d’un estudi transversal o elaborat de manera clàssica apareixen tots els qüestionaris per pacient com en la següent figura.</li>
+</ol>
+<p><img src="Imatges/imatge_36.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>En el cas d’un estudi longitudinal els qüestionaris apareixen separats per línies verticals corresponents als esdeveniments que van succeint. Així, en l’exemple, es disposa de diferents esdeveniments (<em>Screeinng</em>, <em>cycle 1D1</em>, <em>Cycle 1 D2</em>,…, <em>Concomitant Medication</em>). Alguns dels qüestionaris poden repetir-se en els esdeveniments com és el cas de <em>Vital Signs</em>.</li>
+</ol>
+<p><img src="Imatges/imatge_37.png" /></p>
+<p>Una vegada es selecciona el qüestionari clicant en el cercle apareix el qüestionari que s’ha de complimentar.</p>
+<p><img src="Imatges/imatge_38.png" /></p>
+</div>
+<div id="tipus-de-dades" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> <strong>Tipus de dades</strong></h2>
+<p>Com s’explica a l’apartat <a href="gestió-i-creació-de-base-de-dades.html#en15">Creació d’una base de dades en REDCap</a> es poden introduir dades de diferent tipus.</p>
+<p>En la següent imatge podem observar algunes qüestions generals a incloure usualment a una base de dades.</p>
+<ul>
+<li>Normalment, en la part esquerra tenim l’enunciat de la pregunta i en la part dreta el quadre on introduir els valors o els botons de selecció.</li>
+<li>En vermell ens indica si el valor és obligatori i en blau si volem restablir el valor per tornar a començar.</li>
+<li>Opcionalment apareix un globus amb una H que ens mostra un quadre amb l’historial què i com ha modificat la dada.</li>
+<li>Finalment, el globus permet obrir la finestra de gestió de “<em>Queries</em>”. Aquest globus que en principi és groc canvia segons l’estat de la “query” com es veurà més endavant.</li>
+</ul>
+<p><img src="Imatges/imatge_39.png" /></p>
+<p>Els tipus d’informació a incloure són:</p>
+<ul>
+<li><strong>Grup de botons “<em>Radio Group</em>”</strong>. La persona que introdueix les dades ha de seleccionar una de les opcions en forma de botó rodó. Aquestes opcions són excloents.</li>
+</ul>
+<p><img src="Imatges/imatge_40.png" /></p>
+<ul>
+<li><strong>Selecció múltiple</strong>: La persona que introdueix pot seleccionar més d’una opció. Aquestes són quadrats. Per exemple un malalt pot tenir positius diversos marcadors tumorals.</li>
+</ul>
+<p><img src="Imatges/imatge_41.png" /></p>
+<ul>
+<li><strong>Finestra desplegable</strong>: La persona que introdueix dades pot seleccionar alguna de les opcions que apareixen al clicar sobre la fletxa del desplegable.</li>
+</ul>
+<p><img src="Imatges/imatge_42.png" /></p>
+<ul>
+<li><strong>Campo data</strong>: S’ha d’introduir la data segons el format que s’indica o seleccionant-la des del calendari. Si es prem el botó “<em>Hoy</em>” s’inclourà la data d’avui.</li>
+</ul>
+<p><img src="Imatges/imatge_43.png" /></p>
+<ul>
+<li><strong>Camp text o número</strong>: S’introdueix un número o un text en el quadro. Si les regles de validació estan activades, ens indicarà si la dada introduïda no és adient.</li>
+</ul>
+<p><img src="Imatges/imatge_44.png" /></p>
+<ul>
+<li><strong>Camp autocalculat</strong>: Aquest camp s’enplena automàticament en resoldre l’equació una vegada introduïdes les dades necessàries per fer els càlculs.</li>
+</ul>
+<p><img src="Imatges/imatge_45.png" /></p>
+<ul>
+<li><strong>Barra lliscadora</strong>: Movent a dreta o esquerra la barra s’assigna un número de l’1 a 100 com valor seleccionat.</li>
+</ul>
+<p><img src="Imatges/imatge_46.png" /></p>
+<ul>
+<li><strong>Ontologia</strong>: Hi ha algunes classificacions i/o ontologies disponibles com la de medicaments. Posant les primeres lletres suggereix el fàrmac i inclou el codi.</li>
+</ul>
+<p><img src="Imatges/imatge_47.png" /></p>
+<p>Redcap permet de forma senzilla de programar l’opció d’obrir noves preguntes segons el que s’hagi omplert per alguna variable. En l’exemple si es respon no es passa a la següent pregunta.</p>
+<p><img src="Imatges/imatge_48.png" /></p>
+<p>Al final del formulari apareix una pregunta per tal de poder classificar l’estat del formulari abans de guardar-lo. L’Estat és complet, incomplet o sense verificar. En la taula de dades es marquen els qüestionaris amb codis de color de cada situació.</p>
+<p><img src="Imatges/imatge_49.png" /></p>
+<p>Per últim, es pot desar i sortir del formulari o deixar i sortir al següent formulari.</p>
+<p><img src="Imatges/imatge_50.png" /></p>
+<p>En algunes situacions un individu pot tenir diverses respostes per alguns qüestionaris, com per exemple, la medicació concomitant o els efectes adversos. En aquest cas apareix una creu al costat de l’indicador d’estat del qüestionari per tal de poder afegir més instàncies. Una vegada s’obri el qüestionari hi ha un indicador de la instància actual i un indicador del nombre de dades completes (1/2, 2/2, etc.).</p>
+<p><img src="Imatges/imatge_51.png" /></p>
+<p>Simplement clicant en el botó “<em>Add new</em>”, s’afegeix una nova observació.</p>
+<p><img src="Imatges/imatge_52.png" /></p>
+</div>
+<div id="maneig-de-queries" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> <strong>Maneig de “<em>Queries</em>”</strong></h2>
+<p>Una de les opcions que ens dóna REDCap és la possibilitat de fer control de dades vàlides en el moment d’introducció. <a href="gestió-i-creació-de-base-de-dades.html#en16">Aquests criteris de validació es generen en el moment del disseny del qüestionari</a> i normalment es posa un valor mínim i màxim.</p>
+<p>En cas que el valor que s’introdueix estigui fora de rang, surt una alerta indicant-ho.</p>
+<p><img src="Imatges/imatge_53.png" /></p>
+<p>Pel que fa als camps que són obligatoris, quan els intentem gravar surt una advertència amb el llistat de camps que són obligatoris, però no s’han omplert.</p>
+<ul>
+<li>Aquest llistat hauria de ser petit.</li>
+<li>Hi ha tres opcions:
+<ul>
+<li>“<em>Okay</em>”: on es torna al qüestionari per tal de poder omplir les dades.</li>
+<li>Les altres dues opcions permeten ignorar el <em>warning</em> i continuar bé abandonant el registre o anant al següent formulari.</li>
+</ul></li>
+</ul>
+<p><img src="Imatges/imatge_54.png" /></p>
+<p>Quan guardem un qüestionari també ens apareix una advertència quan alguna de les regles de qualitat programades no es compleix. La persona què introdueix dades té l’opció de tornar enrere i corregir-ho, o bé, obrir una <em>Query</em> per reprendre-la posteriorment.</p>
+<ul>
+<li>En aquest sentit l’usuari amb privilegis d’<a href="gestió-dusuaris.html#en3"><em>entrador de dades</em></a> només pot obrir la <em>Query</em> però no tancar-la.</li>
+</ul>
+<p><img src="Imatges/imatge_55.png" /></p>
+<p>La persona que entra dades pot tornar enrere i verificar si ha estat una errada d’introducció i corregir-la per tal que les dades siguin correctes. Si no hi ha error d’introducció, cal polsar sobre el comentari. Se’ns obre la finestra de resolució de flux.</p>
+<p>Hi ha dues opcions:</p>
+<ul>
+<li>Indicar que el valor de la dada està verificat i no es tracta d’un error, o bé, obrir la consulta.
+<ul>
+<li>En cas d’obrir una consulta cal afegir un comentari.</li>
+<li>Hi ha la possibilitat d’assignar la consulta a un usuari com per exemple <em>el monitor</em>.</li>
+</ul></li>
+</ul>
+<p><img src="Imatges/imatge_56.png" /></p>
+<p>A més de les <em>Queries</em> que es generen a l’hora de guardar les dades, es poden executar regles de coherència encaminades a detectar possibles errors que poden convertir-se en una <em>Query</em>.</p>
+<p>Per executar les regles cal anar a l’opció de menú de “<em>Calidad de Datos</em>” on s’obrirà la finestra següent. Podem observar:</p>
+<ul>
+<li>Una sèrie de regles que el sistema REDCap té predeterminades.</li>
+<li>Una sèrie de botons que es poden prémer per tenir diferents opcions.</li>
+</ul>
+<p><img src="Imatges/imatge_57.png" /></p>
+<p>Les regles que estan en vermell són les pròpies del sistema. Aquestes s’anomenen amb lletres i, concretament cal considerar les opcions:</p>
+<ul>
+<li><em>B</em>: Valors Faltants en dades requerides.</li>
+<li><em>C</em> i <em>D</em>: <a href="controls-de-qualitat.html#en5">Errors de validació</a>, els quals hem vist anteriorment.</li>
+<li><em>Todo</em>: executa les regles per a tots els pacients.
+<ul>
+<li>S’obté el nombre de discrepàncies i l’activació de l’opció <em>view</em>.</li>
+</ul></li>
+</ul>
+<p><img src="Imatges/imatge_58.png" /></p>
+<p>Si es clica sobre el botó <em>view</em>, es mostra un llistat amb els registres amb un l’error, amb l’opció d’obrir una <em>Query</em> com s’ha vist anteriorment.</p>
+<p><img src="Imatges/imatge_59.png" /></p>
+<p>Com a <em>usuari</em> o com a <em>monitor</em> cal veure quines són les <em>Queries</em> a efectuar. Per això hem d’anar al menú de <em>resolver problemas</em> on apareix el llistat de <em>Queries</em>.</p>
+<ul>
+<li>Clicant en comentaris es pot obrir la resolució d’aquesta.</li>
+</ul>
+<p><img src="Imatges/imatge_60.png" /></p>
+<p>El <em>entrador de dades</em> pot respondre la <em>Query</em>, però és el <em>monitor</em> qui ha de tancar la consulta.</p>
+<p><img src="Imatges/imatge_61.png" /></p>
+<p>Una vegada un <em>Query</em> està resolta, aquesta desapareix del llistat. Si hi volem tornar a accedir, només cal obrir el menú de <em>resolver problemas</em> i al filtre elegir l’opció <em>cerrado/problema resuelto</em>.</p>
+<p><img src="Imatges/imatge_62.png" /></p>
+<p>Al qüestionari de cada individu es marca la <em>Query</em> pendent amb un punt vermell sobre el globus, com a la imatge que segueix.</p>
+<ul>
+<li>Si la <em>Query</em> esà resolta apareix una marca verda.</li>
+<li>En cas que la <em>Query</em> involucri diversos camps no apareixen aquestes marques.</li>
+</ul>
+<p><img src="Imatges/imatge_63.png" /></p>
+<p>Una vegada resoltes les <em>Queries</em>, el <em>monitor</em>, pot bloquejar els formularis perquè no siguin modificats de nou.</p>
+<ul>
+<li>Al final del formulari apareix el botó de bloqueig.</li>
+</ul>
+<p><img src="Imatges/imatge_64.png" /></p>
+</div>
+<div id="entrada-doble-de-dades" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> <strong>Entrada doble de dades</strong></h2>
+<p>REDCap ofereix efectuar la doble entrada de dades, tot i que té alguns inconvenients que descriurem a continuació.</p>
+<p>Una vegada està creada la base de dades, per poder utilitzar aquest mòdul l’hem d’activar:</p>
+<p><img src="Imatges/imatge_65.png" /></p>
+<p>Primerament crearem els nous <a href="gestió-dusuaris.html#en3">rols d’usuari</a> (ex.: <em>entrador dades</em> (#1), <em>entrador dades</em> (#2) i <em>revisor</em> (o <em>monitor</em>)) i assignarem als usuaris aquests rols.</p>
+<ul>
+<li>Cal assignar uns usuaris al <em>data_entry1</em> i altres al <em>data_entry2</em>. Aparentment aquests usuaris entraran de manera normal les dades de l’usuari.</li>
+</ul>
+<p><img src="Imatges/imatge_67.png" /></p>
+<p>Si observem el quadre següent, veurem que per cada nou usuari:</p>
+<ul>
+<li>Usuari <em>data_entry1</em>:
+<ul>
+<li>Les dades que entri aquest usuari es guardaran en un subjecte que serà el número de pacient amb el sufix “_1”.</li>
+</ul></li>
+<li>Usuari <em>data_entry2</em>:
+<ul>
+<li>Les dades que entri aquest usuari es guardaran en un subjecte que serà el número de pacient amb el sufix “_2”.</li>
+</ul></li>
+<li>Usuari <em>reviewer</em>: Usuari <em>monitor</em> qui veurà la doble entrada.</li>
+</ul>
+<p><img src="Imatges/imatge_68.png" /></p>
+<div id="data-comparison-tool" class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> <em>Data Comparison Tool</em></h3>
+<p>En la part esquerra del menú es troba l’opció <em>Data Comparison Tool</em></p>
+<p><img src="Imatges/imatge_69.png" /></p>
+<p>Primerament, seleccionem un registre o tots els registres entrats. Llavors s’activa l’eina de comparció. Aqui, resideix un dels inconvenients d’aquest mòdul, ja que, si el formulari és molt gran hi surten.</p>
+<p><img src="Imatges/imatge_71.png" />
+<img src="Imatges/imatge_70.png" /></p>
+<p>En forma de taula separada per l’usuari d’entrada de dades apareixen les discrepàncies.</p>
+<ul>
+<li>Mostra el registre amb els sufixos “_1” i “_2”.</li>
+<li>Els camps discrepants.</li>
+<li>Els noms dels formularis.</li>
+<li>Els valors.</li>
+</ul>
+<p>Si es volen canviar valors dels registres, només cal clicar al missatge “<em>clic here to merge them</em>”.</p>
+<p><img src="Imatges/imatge_72.png" /></p>
+<p>Apareix una nova pantalla on es mostren les discrepàncies i el <em>revisor</em> ha de triar quin és el valor correcte i, si no és cap, quin és el nou valor.</p>
+<p><img src="Imatges/imatge_73.png" /></p>
+<p>Una vegada seleccionades les instàncies a canviar, es prem el botó <em>Merge Records</em> que ens generarà un nou registre sense el sufix amb les dades correctes.</p>
+<ul>
+<li>Aquest nou registre és fruit de la combinació dels dos registres anteriors. Per tant, ara tindrem tres registres com s’observa a la imatge següent:</li>
+</ul>
+<p><img src="Imatges/imatge_74.png" /></p>
+<p>Quan no hi ha diferències el sistema indica que els dos registres són idèntics, que no es troben diferències.</p>
+<ul>
+<li>En aquest cas cal crear el registre comú per tal d’exportar finalment un únic registre per pacient.</li>
+</ul>
+<p><img src="Imatges/imatge_75.png" /></p>
+<p>Només cal tenir en compte a l’hora d’analitzar les dades que en les exportacions hi són els tres registres i cal fer servir el que no té sufix.</p>
+</div>
+</div>
+<div id="registre-dactivitat-logregistros" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> <strong>Registre d’activitat: <em>Log/Registros</em></strong></h2>
+<p>Per tal de fer l’<em>audit control</em> dels registres, cal clicar al menú d’<em>Aplicacions</em> l’opció <em>Log/Registros</em> que proporciona el llistat d’accessos, modificacions i canvis efectuats a la base de dades.</p>
+<p><img src="Imatges/imatge_76.png" /></p>
+<p>El registre es pot exportar a un full d’Excel i, a més a més, es poden filtrar els registres per tipus d’esdeveniment, nom de l’usuari, registre de temps, etc.</p>
+<p><img src="Imatges/imatge_77.png" /></p>
+</div>
+</div>
+<p style="text-align: center;">
+<a href="introducció-al-redcap.html"><button class="btn btn-default">Previous</button></a>
+<a href="gestió-dusuaris.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

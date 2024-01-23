@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Manual RedCAP Castellano English | Manual RedCAP    Castellano    English" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+
+
+<meta name="description" content="Manual RedCAP Castellano English | Manual RedCAP    Castellano    English">
+
+<title>Manual RedCAP Castellano English | Manual RedCAP    Castellano    English</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li class="has-sub"><a href="introducció-al-redcap.html#introducció-al-redcap" id="toc-introducció-al-redcap"><span class="toc-section-number">1</span> <strong>Introducció al REDCap</strong></a>
+<ul>
+<li><a href="introducció-al-redcap.html#aplicació-redcap" id="toc-aplicació-redcap"><span class="toc-section-number">1.1</span> <strong>Aplicació REDCap</strong></a></li>
+<li><a href="introducció-al-redcap.html#accés-al-sistema" id="toc-accés-al-sistema"><span class="toc-section-number">1.2</span> <strong>Accés al sistema</strong></a></li>
+<li><a href="introducció-al-redcap.html#sollicitud-serveis" id="toc-sollicitud-serveis"><span class="toc-section-number">1.3</span> <strong>Sol·licitud serveis</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="guia-ràpida-entrada-de-dades.html#guia-ràpida-entrada-de-dades" id="toc-guia-ràpida-entrada-de-dades"><span class="toc-section-number">2</span> <strong>Guia ràpida: Entrada de dades</strong></a>
+<ul>
+<li><a href="guia-ràpida-entrada-de-dades.html#introducciómodificació-dun-registre" id="toc-introducciómodificació-dun-registre"><span class="toc-section-number">2.1</span> <strong>Introducció/modificació d’un registre</strong></a></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#visualització-de-les-dades-dashboard" id="toc-visualització-de-les-dades-dashboard"><span class="toc-section-number">2.2</span> <strong>Visualització de les dades: Dashboard</strong></a></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#tipus-de-dades" id="toc-tipus-de-dades"><span class="toc-section-number">2.3</span> <strong>Tipus de dades</strong></a></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#maneig-de-queries" id="toc-maneig-de-queries"><span class="toc-section-number">2.4</span> <strong>Maneig de “<em>Queries</em>”</strong></a></li>
+<li class="has-sub"><a href="guia-ràpida-entrada-de-dades.html#entrada-doble-de-dades" id="toc-entrada-doble-de-dades"><span class="toc-section-number">2.5</span> <strong>Entrada doble de dades</strong></a>
+<ul>
+<li><a href="guia-ràpida-entrada-de-dades.html#data-comparison-tool" id="toc-data-comparison-tool"><span class="toc-section-number">2.5.1</span> <em>Data Comparison Tool</em></a></li>
+</ul></li>
+<li><a href="guia-ràpida-entrada-de-dades.html#registre-dactivitat-logregistros" id="toc-registre-dactivitat-logregistros"><span class="toc-section-number">2.6</span> <strong>Registre d’activitat: <em>Log/Registros</em></strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-dusuaris.html#gestió-dusuaris" id="toc-gestió-dusuaris"><span class="toc-section-number">3</span> <strong>Gestió d’usuaris</strong></a>
+<ul>
+<li><a href="gestió-dusuaris.html#alta-dun-usuari" id="toc-alta-dun-usuari"><span class="toc-section-number">3.1</span> <strong>Alta d’un usuari</strong></a></li>
+<li><a href="gestió-dusuaris.html#pregunta-de-recuperació-de-la-clau-daccés" id="toc-pregunta-de-recuperació-de-la-clau-daccés"><span class="toc-section-number">3.2</span> <strong>Pregunta de recuperació de la clau d’accés</strong></a></li>
+<li><a href="gestió-dusuaris.html#cas-dús" id="toc-cas-dús"><span class="toc-section-number">3.3</span> <strong>Cas d’ús</strong></a></li>
+<li><a href="gestió-dusuaris.html#alta-de-més-dun-usuari" id="toc-alta-de-més-dun-usuari"><span class="toc-section-number">3.4</span> <strong>Alta de més d’un usuari</strong></a></li>
+<li class="has-sub"><a href="gestió-dusuaris.html#rols-dusuari-i-grups-dags" id="toc-rols-dusuari-i-grups-dags"><span class="toc-section-number">3.5</span> <strong>Rols d’usuari i grups (DAGs)</strong></a>
+<ul>
+<li><a href="gestió-dusuaris.html#en3" id="toc-en3"><span class="toc-section-number">3.5.1</span> <strong>Tipus de rol</strong></a></li>
+<li><a href="gestió-dusuaris.html#creació-de-grups-dags" id="toc-creació-de-grups-dags"><span class="toc-section-number">3.5.2</span> <strong>Creació de grups (DAGs)</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#gestió-i-creació-de-base-de-dades" id="toc-gestió-i-creació-de-base-de-dades"><span class="toc-section-number">4</span> <strong>Gestió i Creació de base de dades</strong></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en15" id="toc-en15"><span class="toc-section-number">4.1</span> <strong>Introducció a la creació d’una base de dades</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en4" id="toc-en4"><span class="toc-section-number">4.2</span> <strong>Secció:</strong> <em>Ajustes principales de Proyecto</em></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#secció-habilitar-módulos-opcionales-y-personalizaciones" id="toc-secció-habilitar-módulos-opcionales-y-personalizaciones"><span class="toc-section-number">4.3</span> <strong>Secció:</strong> <em>Habilitar módulos opcionales y personalizaciones</em></a></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#secció-diseño-de-instrumentos-de-recolección-de-datos" id="toc-secció-diseño-de-instrumentos-de-recolección-de-datos"><span class="toc-section-number">4.4</span> <strong>Secció:</strong> <em>Diseño de instrumentos de recolección de datos</em></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#etiquetes-de-camp" id="toc-etiquetes-de-camp"><span class="toc-section-number">4.4.1</span> <strong>Etiquetes de camp</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#instruments-com-a-enquesta" id="toc-instruments-com-a-enquesta"><span class="toc-section-number">4.4.2</span> <strong>Instruments com a enquesta</strong></a></li>
+</ul></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#secció-habilitar-módulos-opcionales-y-personalizaciones-1" id="toc-secció-habilitar-módulos-opcionales-y-personalizaciones-1"><span class="toc-section-number">4.5</span> <strong>Secció</strong>: <em>Habilitar módulos opcionales y personalizaciones</em></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en1" id="toc-en1"><span class="toc-section-number">4.6</span> <strong>Secció</strong>: <em>Definir sus eventos y designar instrumentos para ellos</em></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en2" id="toc-en2"><span class="toc-section-number">4.7</span> <strong>Secció</strong>: <em>Prueba tu proyecto a fondo</em></a></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#mòduls-addicionals-recolección-de-datos" id="toc-mòduls-addicionals-recolección-de-datos"><span class="toc-section-number">4.8</span> <strong>Mòduls addicionals</strong>: <em>Recolección de datos</em></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#accés-a-lenquesta" id="toc-accés-a-lenquesta"><span class="toc-section-number">4.8.1</span> <strong>Accés a l’enquesta</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#pissarra-destat-de-registres" id="toc-pissarra-destat-de-registres"><span class="toc-section-number">4.8.2</span> <strong>Pissarra d’Estat de Registres</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#agregareditar-registres" id="toc-agregareditar-registres"><span class="toc-section-number">4.8.3</span> <strong>Agregar/Editar Registres</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#mòduls-addicionals-aplicaciones" id="toc-mòduls-addicionals-aplicaciones"><span class="toc-section-number">4.9</span> <strong>Mòduls addicionals</strong>: <em>Aplicaciones</em></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en9" id="toc-en9"><span class="toc-section-number">4.9.1</span> <strong><em>Exportación de datos, Reportes y Estadísticas</em></strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en8" id="toc-en8"><span class="toc-section-number">4.9.2</span> <strong><em>Herramienta para importar datos</em></strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#herramientas-para-comparar-datos" id="toc-herramientas-para-comparar-datos"><span class="toc-section-number">4.9.3</span> <strong><em>Herramientas para comparar datos</em></strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#logregistros" id="toc-logregistros"><span class="toc-section-number">4.9.4</span> **_Log/Registros**</a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#primera-base-de-dades" id="toc-primera-base-de-dades"><span class="toc-section-number">4.10</span> <strong>Primera base de dades</strong></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#en7" id="toc-en7"><span class="toc-section-number">4.10.1</span> <strong>Principis generals</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="gestió-i-creació-de-base-de-dades.html#en16" id="toc-en16"><span class="toc-section-number">4.11</span> <strong>Validació de la gestió de dades: Validació PQ</strong></a>
+<ul>
+<li><a href="gestió-i-creació-de-base-de-dades.html#definició" id="toc-definició"><span class="toc-section-number">4.11.1</span> <strong>Definició</strong></a></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#procés" id="toc-procés"><span class="toc-section-number">4.11.2</span> <strong>Procés</strong></a></li>
+</ul></li>
+<li><a href="gestió-i-creació-de-base-de-dades.html#tancament-base-de-dades" id="toc-tancament-base-de-dades"><span class="toc-section-number">4.12</span> <strong>Tancament base de dades</strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="controls-de-qualitat.html#controls-de-qualitat" id="toc-controls-de-qualitat"><span class="toc-section-number">5</span> <strong>Controls de qualitat</strong></a>
+<ul>
+<li class="has-sub"><a href="controls-de-qualitat.html#gestió-de-queries" id="toc-gestió-de-queries"><span class="toc-section-number">5.1</span> <strong>Gestió de <em>Queries</em></strong></a>
+<ul>
+<li><a href="controls-de-qualitat.html#personal-gestor-del-sistema-de-queries" id="toc-personal-gestor-del-sistema-de-queries"><span class="toc-section-number">5.1.1</span> <strong>Personal gestor del sistema de <em>Queries</em></strong></a></li>
+</ul></li>
+<li class="has-sub"><a href="controls-de-qualitat.html#en6" id="toc-en6"><span class="toc-section-number">5.2</span> <strong>Implementació de regles personalitzades</strong></a>
+<ul>
+<li><a href="controls-de-qualitat.html#comprovació-de-regles-personalitzades" id="toc-comprovació-de-regles-personalitzades"><span class="toc-section-number">5.2.1</span> <strong>Comprovació de regles personalitzades</strong></a></li>
+</ul></li>
+<li><a href="controls-de-qualitat.html#en5" id="toc-en5"><span class="toc-section-number">5.3</span> <strong>Execució de les regles de control de qualitat</strong></a></li>
+</ul></li>
+<li><a href="definicions-i-abreviatures.html#definicions-i-abreviatures" id="toc-definicions-i-abreviatures"><span class="toc-section-number">6</span> <strong>Definicions i abreviatures</strong></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="header">
+<h1 class="title">Manual RedCAP <br><br> <a href="e:/21692711P/Dropbox%20(Nuevo%20Equipo%20VHIR10)/UEB/REDCap/Manuals/REDCap_CAS/introducción-al-redcap.html">Castellano</a> <br><br> <a href="e:/21692711P/Dropbox%20(Nuevo%20Equipo%20VHIR10)/UEB/REDCap/Manuals/REDCap_ANG/redcap-introduction.html">English</a></h1>
+<h3 class="subtitle"><em><img src="Imatges/logo_UEB_lletres_blanc.png" style="width:43.0%" alt="UEB" /> <img src="Imatges/Logo_VHIR_HUVH_blanco_fondo_lila_JMC_2.png" style="width:55.0%" alt="IR" /><br><br> <img src="Imatges/RedCAP_logo.jfif" style="width:100.0%" alt="RedCAP" /></em></h3>
+</div>
+<div id="introducció-al-redcap" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> <strong>Introducció al REDCap</strong></h1>
+<div id="aplicació-redcap" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> <strong>Aplicació REDCap</strong></h2>
+<blockquote>
+<p><strong>Abans d’utilitzar REDCap s’ha de tenir clar el tipus d’estudi que es pretén fer i quins són els quaderns de recollida de la informació que s’utilitzaran.</strong></p>
+</blockquote>
+<p><a href="https://www.project-redcap.org">REDCap</a> és una aplicació segura basada en el web per a crear i manipular bases de dades.</p>
+<p>Bàsicament hi ha <em>tres tipus d’estudis a utilitzar disponibles</em>:</p>
+<ul>
+<li>Estudi longitudinal (Assaig Clínic o Cohort)</li>
+<li>Estudi transversal (Recollida puntual)</li>
+<li>Enquesta dirigida a tercers</li>
+</ul>
+<p>En els dos primers tipus d’estudi es crearà una estructura de gestió de la informació dins de REDCap. Mentre que, a les enquestes dirigides a tercers, el creador de l’estructura de recollida de la informació pot gestionar el treball de manera que els qüestionaris li siguin remesos per via electrònica a l’enquestat que ha d’emplenar-la.</p>
+</div>
+<div id="accés-al-sistema" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> <strong>Accés al sistema</strong></h2>
+<p>Al sistema REDCap es pot accedir a través del <em>URL</em> <a href="https://redcap.vhir.org/redcap/">https://redcap.vhir.org/redcap/</a> amb el nostre nom d’usuari i clau d’accés.</p>
+<p><a href="https://redcap.vhir.org/redcap/"><img src="Imatges/imatge_30.png" /></a></p>
+<p>Una vegada aprovat l’accés, apareix la pantalla inicial amb diverses pestanyes en les quals poder efectuar els treballs necessaris.</p>
+<ul>
+<li>En aquesta pàgina també trobem els enllaços a la formació pròpia que ofereix la Universitat de Vanderbilt (1).</li>
+</ul>
+<p><img src="Imatges/imatge_78.png" /></p>
+<p><img src="Imatges/imatge_79.png" /></p>
+</div>
+<div id="sollicitud-serveis" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> <strong>Sol·licitud serveis</strong></h2>
+<p>Per demanar el servei de creació d’una base de dades al sistema REDCap cal:</p>
+<ul>
+<li><a href="http://www.vhir.org/portal1/webUEB/Alta.aspx">Omplir el formulari</a> per fer una sol·licitud a l’UEB.</li>
+<li>Seleccionar l’opció Tipologia = ‘REDCap’.</li>
+<li>Omplir la resta d’apartats (marcats amb vermell i un * si són d’entrada obligatòria).</li>
+</ul>
+<p><a href="http://www.vhir.org/portal1/webUEB/Alta.aspx"><img src="Imatges/imatge_1.png" /></a></p>
+</div>
+</div>
+<p style="text-align: center;">
+<a href="guia-ràpida-entrada-de-dades.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
