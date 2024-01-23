@@ -5,7 +5,7 @@
 <p><em><img src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23850&amp;doc_id_hash=290e84645500cbc0e0bd8da27e422432e571ad9c" width="661" height="123"></em></p>
 <p> </p>
 <h6>@CALCTEXT()</h6>
-<p><span style="background-color: var(--bs-body-bg); text-align: var(--bs-body-text-align);">Function</span></p>
+<p>Function</p>
 <ul>
 <li><span style="font-weight: normal;">Evaluates the logic inside its brackets - </span>@CALCTEXT()<span style="font-weight: normal;"> - and outputs the result as text and/or number. </span>
 <ul>
@@ -22,7 +22,7 @@
 <li><span style="font-weight: normal;">It can concatenate two (or more) fields with -as an example- a space between them:</span></li>
 </ol>
 <pre>@CALCTEXT(concat([first_field], ' ', [second_field]))</pre>
-<ol>
+<ol start="2">
 <li><span style="font-weight: normal;">It can be combined with a normal <span style="text-decoration: underline;"><em>if(x,y,z)</em> function</span>:</span></li>
 </ol>
 <pre>@CALCTEXT(if([your_field]='numeric-value', 'value if TRUE', 'Value if FALSE'))</pre>
@@ -48,18 +48,13 @@
 <ul>
 <li style="list-style-type: none;">
 <ul>
-<li><span style="background-color: var(--bs-body-bg); text-align: var(--bs-body-text-align); font-weight: normal;">But, it is <span style="text-decoration: underline; color: rgb(224, 62, 45);">NOT</span> possible to<em> '[pipe]'</em> field variables or Smart Variables inside quotes for the return values.</span></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><span style="font-weight: normal;">But, it is <span style="text-decoration: underline; color: rgb(224, 62, 45);">NOT</span> possible to<em> '[pipe]'</em> field variables or Smart Variables inside quotes for the return values.</span></li>
 </ul>
 <ol>
 <li style="list-style-type: none;">
 <ul>
-<li><span style="background-color: var(--bs-body-bg); text-align: var(--bs-body-text-align); font-weight: normal;">it can return a value as a number:</span></li>
+<li><span style="font-weight: normal;">it can return a value as a number:</span></li>
 </ul>
-</li>
 </ol>
 <pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre>
 <p>Notes</p>
