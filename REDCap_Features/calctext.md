@@ -34,12 +34,11 @@
 <pre>@CALCTEXT(if([smoke]='1', 'possible case', 'excluded'))<br>@CALCTEXT(if([background(1)]='1', 'possible case', 'excluded'))</pre>
 <ol start="4">
 <li><span style="font-weight: normal;">It is possible to insert 'static text', field variables, or Smart Variables as return values within the IF function:</span></li>
+<ul>
 <li><span style="font-weight: normal;">But, it is </span>NOT<span style="font-weight: normal;"> possible to<em> '[pipe]'</em> field variables or Smart Variables inside quotes for the return values.</span></li>
 </ol>
 <pre>@CALCTEXT(if([your_field] &gt;= 18, [other_field], [current-instance])</pre>
 <ol start="5">
-</li>
-</ol>
 <li><span style="font-weight: normal;">it can return a value as a number:</span></li>
 <pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre>
 <p>Notes</p>
