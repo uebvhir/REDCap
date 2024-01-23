@@ -39,7 +39,7 @@
 </ol>
 <pre>@CALCTEXT(if([your_field] &gt;= 18, [other_field], [current-instance])</pre>
 <ol start="5">
-<li><span style="font-weight: normal;">it can return a value as a number:</span></li>
+<li><span style="font-weight: normal;">It can return a value as a number:</span></li>
 <pre>@CALCTEXT(if([one_field] &gt;= 180, 'out of range', 0.5*[other_field]))</pre>
 <p>Notes</p>
 <ul>
