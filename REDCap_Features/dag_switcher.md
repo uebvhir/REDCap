@@ -5,7 +5,7 @@
 <ul style="text-align: justify;">
 <li>This module can be configured in the <span style="text-decoration: underline;">Data Access Groups (DAGs) section</span> of each project.</li>
 </ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23830&amp;doc_id_hash=7e78df4d56e17e3dabf98cdb8afe93e3116a3727" width="489" height="397"></p>
+![dag_switcher.png](https://github.com/uebvhir/REDCap/blob/main/REDCap_Features/Imatges/dag_switcher.png))
 <p style="text-align: justify;">A users assigned to <span style="text-decoration: underline;">multiple DAGs</span> has the privilege of switching in and out of specific <span style="text-decoration: underline;">DAGs</span> on their own whenever they wish.</p>
 <p style="text-align: justify;">As a project REDCap adminsitrator, you can assign a user to <span style="text-decoration: underline;">multiple DAG</span>s, checking different DAG checkboxes for that user.</p>
 <ul>
