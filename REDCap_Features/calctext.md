@@ -1,7 +1,7 @@
 <h3>@<span style="text-decoration: underline;">ACTION @TAGs: CALCTEXT</span></h3>
 <p> </p>
 <h6>Do you know what are Action Tags?</h6>
-<p><em>'Action Tags are special terms that begin with the '@' sign that can be placed inside a field's Field Annotation' (see <a title="REDCap Help &amp; FAQ page" href="https://redcap.vhir.org/redcap/index.php?action=help" target="_blank" rel="noopener">REDCap Help &amp; FAQ page</a>.)</em></p>
+<p><em>'Action Tags are special terms that begin with the '@' sign that can be placed inside a field's Field Annotation' (see <a title="REDCap Help &amp; FAQ page" href="https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/action_tag.png" target="_blank" rel="noopener">REDCap Help &amp; FAQ page</a>.)</em></p>
 <p><em><img src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23850&amp;doc_id_hash=290e84645500cbc0e0bd8da27e422432e571ad9c" width="661" height="123"></em></p>
 <p> </p>
 <h6>@CALCTEXT()</h6>
@@ -13,7 +13,7 @@
 </ul>
 </li>
 </ul>
-<p><span style="font-weight: normal;"><img src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23852&amp;doc_id_hash=595474dbc27b547df146dc23c8e4582fdaaadb01" width="684" height="79"></span></p>
+<p><span style="font-weight: normal;"><img src=https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/field_type.png" width="684" height="79"></span></p>
 <ul>
 <li><span style="font-weight: normal;">This annotated field will function <em>almost exactly</em> like a <span style="text-decoration: underline;">'Calculated Field' type</span>.</span></li>
 </ul>
@@ -45,4 +45,4 @@
 <ul>
 <li>CALCTEXT() <span style="font-weight: normal;">values can be updated when running <em><span style="text-decoration: underline;">Data Quality rule H</span></em> (see <span style="text-decoration: underline;">Data Quality page</span> of a REDCap project as follows):</span></li>
 </ul>
-<p><span style="font-weight: normal;"><img style="float: left;" src="https://redcap.vhir.org/redcap/redcap_v14.1.0/DataEntry/image_view.php?pid=1337&amp;id=23851&amp;doc_id_hash=3f3f20fc34748f64aaecb1fd6d15ef295027d934" width="218" height="249"></span></p>
+<p><span style="font-weight: normal;"><img style="float: left;" src="https://github.com/uebvhir/REDCap/blob/35410e383f6dbd355f3874619ea8108ae3c27fdb/REDCap_Features/Imatges/data_quality.png" width="218" height="249"></span></p>
